@@ -13,7 +13,7 @@
     --background-color:#fff;
     --snd-bg-color:#d5fdf9;
     --text-color:#000;
-    --main-color:rgb(65 90 119);
+    --main-color:rgb(191, 93, 13);
 }
 html {
     font-size:62.5%;
@@ -27,6 +27,13 @@ body {
 section {
     min-height:100vh;
     padding:10rem 9% 2rem;
+}
+
+.container {
+  width: 400%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
 }
 
 /* header section code */
@@ -81,13 +88,13 @@ section {
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color: rgb(65 90 119);
+    background-color: rgb(191, 93, 13);
 }
 
 .home-img img{
     width:25vw;
     border-radius:50%;
-    box-shadow:0 0 25px #00ff37;
+    box-shadow:0 0 25px white;
     cursor:pointer;
     animation:floatimage 4s ease-in-out infinite;
     transition:0.4s ease;
@@ -122,7 +129,7 @@ section {
 margin-bottom: 2rem;
 }
 span {
-    color:#00ff37;
+    color:white;
 }
 .home-content h1 {
     font-size: 6rem;
@@ -143,7 +150,7 @@ span {
     border:0.2rem solid black;
     border-radius: 50%;
     font-size: 2rem;
-    color:#00ff37;
+    color:white;
     margin:3rem 1.5rem 3rem 0;
     transition:0.3s ease;
 }
@@ -159,7 +166,7 @@ span {
 .btn {
     display:inline-block;
     padding:1rem 2.8rem;
-    background:#00ff37;
+    background:white;
     border-radius:4rem;
     box-shadow:none;
     font-size:1.6rem;
@@ -180,7 +187,7 @@ span {
     align-items:center;
     justify-content: center;
     gap:2rem;
-    background:rgb(65 90 119);
+    background:rgb(116, 120, 123);
 }
 
 .heading {
@@ -216,11 +223,45 @@ span {
     transition:0.4s ease;
 }
 
+/* Projects section code */
+
+#Projects {
+    padding :50px 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:2rem;
+    background: rgb(191, 93, 13);
+    text-align: center;
+    line-height:1.2;
+    font-size: 3rem;
+}
+
+
+.Projects-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+
+.Projects{
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+}
+
+.Projects img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+}
 
 /* services section code */
 
 .services{
-    background-color:rgb(65 90 119);
+    background-color:rgb(99, 101, 103);
 }
 
 .services h2 {
